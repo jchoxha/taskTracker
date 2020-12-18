@@ -8,16 +8,16 @@ body {
   background: rgb(63, 63, 63);
 }
 .App{
-  background: #333;
+  background: #eee;
   margin: 20px auto;
   width: 90%;
   max-width: 700px;
-  color: #eee;
+  color: #555;
 }
 .navbar{
   padding: 10px 20px;
   text-align: center;
-  background: #555
+  background: #ddd
 }
 .navbar h1{
   margin: 10px 0;
@@ -31,7 +31,7 @@ body {
   list-style-type: none;
 }
 .task-list li{
-  background: #555;
+  background:#ddd;
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
@@ -43,12 +43,12 @@ body {
 }
 .task-list .title{
   font-weight: bold;
-  color: #fff;
+  color: #555;
   font-size: 1.2em;
 }
-.task-list .author{
+.task-list .description{
   font-size: 0.9em;
-  color: #ddd;
+  color: #555;
 }
 .empty{
   margin: 20px;
@@ -63,12 +63,12 @@ input[type='text']{
   padding: 10px;
   box-sizing: border-box;
   margin: 6px 0;
-  background: #eee;
+  background: #ddd;
   border: 0;
 }
 input[type='submit']{
   margin: 10px auto;
-  background: #eee;
+  background: #ddd;
   border: 0;
   padding: 6px 20px;
   display: block;

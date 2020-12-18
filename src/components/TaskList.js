@@ -2,6 +2,12 @@ import React, { useContext } from 'react';
 import TaskDetails from './TaskDetails';
 import { TaskContext } from '../contexts/TaskContext';
 
+const randomBackgroundColor = () => {
+  const color = Math.floor(Math.random() * Math.floor(10));
+
+  return color;
+}
+
 const TaskList = () => {
   const { tasks } = useContext(TaskContext);
   return tasks.length ? (
