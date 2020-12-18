@@ -5,7 +5,7 @@ export const taskReducer = (state, action) => {
     case 'ADD_TASK':
       return [...state, {
         title: action.task.title, 
-        author: action.task.author, 
+        description: action.task.description, 
         id: uuid()}
       ]
     case 'REMOVE_TASK':
