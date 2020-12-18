@@ -15,11 +15,11 @@ const NewBookForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="book title" value={title}
+      <input type="text" placeholder="Task Name" value={title}
         onChange={(e) => setTitle(e.target.value)} required />
-      <input type="text" placeholder="author name" value={author}
-        onChange={(e) => setAuthor(e.target.value)} required />
-      <input type="submit" value="add book" />
+      <input type="text" placeholder="Task Description (Optional)" value={author}
+        onChange={(e) => setAuthor(e.target.value)} />
+      <input type="submit" value="Add Task" />
     </form>
   );
 }
