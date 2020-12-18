@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import { BookContext } from '../contexts/BookContext';
+import { TaskContext } from '../contexts/TaskContext';
 
 const Navbar = () => {
-  const { books } = useContext(BookContext);
+  const { tasks } = useContext(TaskContext);
   return (
     <div className="navbar">
       <h1>To Do</h1>
-      <p>Currently you have {books.length} tasks to complete...</p>
+      <p>Currently you have {tasks.length} tasks to complete...</p>
     </div>
   );
 }

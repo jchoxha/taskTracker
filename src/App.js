@@ -1,17 +1,17 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import BookContextProvider from './contexts/BookContext';
-import BookList from './components/BookList';
-import NewBookForm from './components/NewBookForm';
+import TaskContextProvider from './contexts/TaskContext';
+import TaskList from './components/TaskList';
+import NewTaskForm from './components/NewTaskForm';
 
 function App() {
   return (
     <div className="App">
-      <BookContextProvider>
+      <TaskContextProvider>
         <Navbar />
-        <BookList />
-        <NewBookForm />
-      </BookContextProvider>
+        <TaskList />
+        <NewTaskForm />
+      </TaskContextProvider>
     </div>
   );
 }
